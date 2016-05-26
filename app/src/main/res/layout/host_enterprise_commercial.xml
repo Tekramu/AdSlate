@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="City"
+            android:textSize="@dimen/registration_text_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:layout_marginBottom="@dimen/skip_margin">
+
+            <Spinner
+                android:id="@+id/spnCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:dropDownSelector="@android:color/transparent"
+                android:spinnerMode="dialog" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.9"
+                    android:textSize="@dimen/registration_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_down_14" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="Type"
+            android:textSize="@dimen/registration_text_size" />
+
+        <RadioGroup
+            android:id="@+id/radioType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/skip_margin"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioTaxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingLeft="@dimen/margin_small"
+                android:checked="true"
+                android:text="Taxi"
+                android:textSize="@dimen/registration_text_size" />
+
+            <RadioButton
+                android:id="@+id/radioBusses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingLeft="@dimen/margin_small"
+                android:text="Busses"
+                android:textSize="@dimen/registration_text_size" />
+
+            <RadioButton
+                android:id="@+id/radioAuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingLeft="@dimen/margin_small"
+                android:text="Auto"
+                android:textSize="@dimen/registration_text_size" />
+
+            <RadioButton
+                android:id="@+id/radioTrucks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:button="@drawable/radiobutton_selector"
+                android:text="Trucks"
+                android:textSize="@dimen/registration_text_size" />
+
+            <RadioButton
+                android:id="@+id/radioMini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:button="@drawable/radiobutton_selector"
+                android:text="Mini trucks"
+                android:paddingLeft="@dimen/margin_small"
+                android:textSize="@dimen/registration_text_size" />
+
+            <RadioButton
+                android:id="@+id/radioLuxury"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingLeft="@dimen/margin_small"
+                android:text="Luxury cars(+15 lacs)"
+                android:textSize="@dimen/registration_text_size" />
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/skip_margin"
+            app:hintTextAppearance="@style/flaotingtext">
+
+            <EditText
+                android:id="@+id/xEtAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="Address(Hidden)"
+                android:includeFontPadding="true"
+                android:paddingTop="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/skip_margin"
+            app:hintTextAppearance="@style/flaotingtext">
+
+            <EditText
+                android:id="@+id/xEtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="Location"
+                android:includeFontPadding="true"
+                android:paddingTop="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:paddingBottom="@dimen/skip_margin">
+
+            <Spinner
+                android:id="@+id/spnLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.9"
+                    android:textSize="@dimen/registration_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_down_14" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayAverage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/skip_margin"
+            android:layout_marginLeft="@dimen/margin_small"
+            app:hintTextAppearance="@style/flaotingtext">
+
+            <EditText
+                android:id="@+id/xEtAverage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="Average kms driven"
+                android:includeFontPadding="true"
+                android:paddingTop="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sides available"
+            android:textSize="@dimen/registration_text_size" />
+
+        <RadioGroup
+            android:id="@+id/radioSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/skip_margin"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioFront"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_small"
+                android:button="@drawable/radiobutton_selector"
+                android:checked="true"
+                android:text="Front and back"
+                android:textSize="@dimen/registration_text_size" />
+
+            <RadioButton
+                android:id="@+id/radioSideDoors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_small"
+                android:button="@drawable/radiobutton_selector"
+                android:text="Side doors"
+                android:textSize="@dimen/registration_text_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:background="@drawable/edittext"
+                android:paddingTop="@dimen/margin_small">
+
+                <Spinner
+                    android:id="@+id/spnNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:dropDownSelector="@android:color/transparent"
+                    android:spinnerMode="dialog" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2.8"
+                        android:textSize="@dimen/registration_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow_drop_down_14" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RadioButton
+                android:id="@+id/radioBoth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_small"
+                android:text="Both"
+                android:textSize="@dimen/registration_text_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:paddingBottom="@dimen/skip_margin"
+            android:text="Price"
+            android:textSize="@dimen/registration_text_size" />
+
+        <LinearLayout
+            android:id="@+id/xLtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/skip_margin"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLayPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/skip_margin"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_weight="1"
+                app:hintTextAppearance="@style/flaotingtext">
+
+                <EditText
+                    android:id="@+id/xEtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_weight="1"
+                android:background="@drawable/edittext"
+                android:padding="@dimen/margin_small">
+
+                <Spinner
+                    android:id="@+id/spnPerVeh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:dropDownSelector="@android:color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.9"
+                        android:textSize="@dimen/registration_text_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow_drop_down_14" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

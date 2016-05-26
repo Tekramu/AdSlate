@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_margin="@dimen/margin_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/skip_margin">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "John Appleseed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/registration_text_size"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/help_margin"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "JohnAppleseed@gmail.com"
+            android:textSize="@dimen/registration_text_size"
+           android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_small"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Edit Name"
+        android:background="@color/button_grey"
+        android:padding="@dimen/skip_margin"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:textSize="@dimen/registration_text_size"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/edittext"
+        android:padding="@dimen/skip_margin"
+        android:hint = "Full Name"
+        android:textSize="@dimen/registration_text_size"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Edit Email"
+        android:background="@color/button_grey"
+        android:padding="@dimen/skip_margin"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:textSize="@dimen/registration_text_size"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/edittext"
+        android:padding="@dimen/skip_margin"
+        android:hint = "Email Address"
+        android:textSize="@dimen/registration_text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Change Password"
+        android:textSize="@dimen/registration_text_size"
+        android:background="@color/button_grey"
+        android:padding="@dimen/skip_margin"
+        android:layout_marginTop="@dimen/skip_margin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/edittext"
+        android:padding="@dimen/skip_margin"
+        android:hint = "Old Password"
+        android:textSize="@dimen/registration_text_size"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/edittext"
+        android:padding="@dimen/skip_margin"
+        android:hint = "New Password"
+        android:textSize="@dimen/registration_text_size"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/edittext"
+        android:padding="@dimen/skip_margin"
+        android:hint = "Confirm Password"
+        android:textSize="@dimen/registration_text_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Change Mobile Number"
+        android:background="@color/button_grey"
+        android:padding="@dimen/skip_margin"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:textSize="@dimen/registration_text_size"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/edittext"
+        android:padding="@dimen/skip_margin"
+        android:hint = "Mobile Number"
+        android:textSize="@dimen/registration_text_size"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Change Address"
+            android:background="@color/button_grey"
+            android:padding="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:textSize="@dimen/registration_text_size"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/edittext"
+            android:padding="@dimen/skip_margin"
+            android:hint = "Address"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/registration_text_size"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Edit Profile"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:padding="@dimen/skip_margin"
+            android:layout_margin="@dimen/help_margin"
+            android:textSize="@dimen/registration_text_size"
+            android:gravity="center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

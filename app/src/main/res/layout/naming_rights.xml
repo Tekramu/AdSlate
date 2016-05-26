@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayBusinessType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtBusinessType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Type of business"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayBusinessDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtBusinessDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Business description"
+                android:padding="@dimen/small_padding"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Location"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Location"
+                android:padding="@dimen/small_padding"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/skip_margin"
+                android:layout_marginTop="@dimen/skip_margin"
+                android:layout_marginRight="@dimen/skip_margin"
+                android:weightSum="2"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id ="@+id/xTvMin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text = "Min"
+                    android:padding="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext">
+
+                    <Spinner
+                        android:id = "@+id/xSpHrMin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:color/transparent"
+                        android:background="@android:color/transparent"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/skip_margin"
+                android:layout_marginTop="@dimen/skip_margin"
+                android:layout_marginRight="@dimen/skip_margin"
+                android:weightSum="2"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id ="@+id/xTvMax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text = "Max"
+                    android:padding="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext">
+
+                    <Spinner
+                        android:id = "@+id/xSpHrMin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:color/transparent"
+                        android:background="@android:color/transparent"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:weightSum="2">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLayRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/flaotingtext"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/skip_margin">
+
+                <EditText
+                    android:id ="@+id/xEtRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint = "Rate (optional)"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext">
+
+                <Spinner
+                    android:id = "@+id/xSpPayMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownSelector="@android:color/transparent"
+                    android:background="@android:color/transparent"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/registration_text_size"
+                        android:layout_weight="1.9"
+                        android:layout_gravity="center_vertical" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@drawable/ic_arrow_drop_down_14"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:background="@color/button_grey"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:layout_gravity="center">
+
+
+            <CheckBox
+                android:id = "@+id/xCheckBoxTermsCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_gravity="center_vertical"/>
+
+
+            <TextView
+                android:id = "@+id/xTvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Terms &amp; condition"
+                android:textSize="@dimen/registration_text_size"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id = "@+id/xTvHostSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Host space"
+            android:textSize="@dimen/registration_text_size"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:padding="@dimen/margin_small"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

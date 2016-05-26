@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/skip_margin"
+    android:layout_marginRight="@dimen/skip_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="@dimen/skip_margin">
+
+        <TextView
+            android:id ="@+id/xTvUploadBrandLbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:text = "Brand logo"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_marginTop="@dimen/margin_small" />
+
+        <TextView
+            android:id = "@+id/xTvCreateCampaign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Upload logo"
+            android:textSize="@dimen/registration_text_size"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:padding="@dimen/margin_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="@dimen/skip_margin">
+
+            <TextView
+                android:id ="@+id/xTvSignImgLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                android:text = "Sign image"
+                android:textSize="@dimen/registration_text_size"
+                android:layout_marginTop="@dimen/margin_small" />
+
+            <TextView
+                android:id = "@+id/xTvUploadSignImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Upload image"
+                android:textSize="@dimen/registration_text_size"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                android:padding="@dimen/margin_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginLeft="@dimen/skip_margin"
+                android:layout_marginRight="@dimen/skip_margin"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:weightSum="2">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLayLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/flaotingtext"
+                android:layout_weight="1.9"
+                android:layout_marginRight="@dimen/skip_margin"
+                android:padding="@dimen/margin_small">
+
+                <EditText
+                    android:id ="@+id/xEtPerSpaceCst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint = "Location"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edittext">
+
+                <TextView
+                    android:id = "@+id/xTvMapView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "Map View"
+                    android:textSize="@dimen/registration_text_size"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button"
+                    android:padding="@dimen/margin_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_marginLeft="@dimen/skip_margin"
+                    android:layout_marginRight="@dimen/skip_margin"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginTop="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Address"
+                android:padding="@dimen/margin_small"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:layout_margin="@dimen/margin_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:background="@color/button_grey"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/skip_margin">
+
+
+            <CheckBox
+                android:id = "@+id/xCheckBoxTermsCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_gravity="center_vertical"/>
+
+
+            <TextView
+                android:id = "@+id/xTvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Terms &amp; condition"
+                android:textSize="@dimen/registration_text_size"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id = "@+id/xTvHostSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Host space"
+            android:textSize="@dimen/registration_text_size"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:padding="@dimen/margin_small"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

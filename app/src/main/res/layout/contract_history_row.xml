@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/xTvOrderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderNo"
+            android:textSize="@dimen/registration_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xTvDuration"
+            android:text="Duration"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/xTvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date And Time"
+            android:textSize="@dimen/registration_text_size" />
+
+        <TextView
+            android:id="@+id/xTvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/xTvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Details"
+        android:textSize="@dimen/registration_text_size"
+        android:textColor="@color/black"
+        android:background="@color/button_grey"
+        android:padding="@dimen/margin_small"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_small"/>
+
+
+</LinearLayout>
